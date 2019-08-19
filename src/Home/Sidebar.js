@@ -107,35 +107,36 @@ const styles = theme => ({
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing.unit * 3,
         float: 'right',
         color: 'white',
         overflow: 'auto',
     },
     icon: {
-        fontSize: 27,
-        fontWeight: 100,
-        color: 'white'
+        fontSize: 21,
+        color: 'white',
     },
+    listItemIcon: {
+        margin: '0 0 0 10px'
+    }
 });
 
 const DrawerContent = props => (
     <List component="nav">
       <ListItem button>
         <ListItemIcon>
-            <MenuIcon className={props.classes.icon} />
+            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
         </ListItemIcon>
         <ListItemText primary="Dashboard" classes={{ primary: props.classes.whiteFont }} />
       </ListItem>
       <ListItem button>
         <ListItemIcon>
-            <MenuIcon className={props.classes.icon} />
+            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
         </ListItemIcon>
         <ListItemText primary="Inbox" classes={{ primary: props.classes.whiteFont }} />
       </ListItem>
       <ListItem button>
         <ListItemIcon>
-            <MenuIcon className={props.classes.icon} />
+            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
         </ListItemIcon>
         <ListItemText primary="Sign in" classes={{ primary: props.classes.whiteFont }} />
       </ListItem>
