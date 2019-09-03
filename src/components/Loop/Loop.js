@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import diagram from '../../images/EnergyDiagram.svg';
 import axios from 'axios';
+import PointContainer from './PointContainer'
 
 var mqtt = require('mqtt');
 var host = 'wss://iot.research.hamk.fi:443/mqtt';
@@ -65,8 +66,9 @@ export default class Loop extends Component {
           <div className="loop-container-loop">
             <div className="loop-container">
               <div className="loop-wrapper">
-    
+              <PointContainer />
                 <div className="div-block">
+                  
                   <img src={diagram} alt="Diagram" className="diagram" />
                 </div>
               </div>
