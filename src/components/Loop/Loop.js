@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import diagram from '../images/EnergyDiagram.svg';
+import diagram from '../../images/EnergyDiagram.svg';
 import axios from 'axios';
 
 var mqtt = require('mqtt');
@@ -21,14 +21,14 @@ var options = {
     password: '',
     rejectUnauthorized: false,
 };
-var client = mqtt.connect(
+var mqttClient = mqtt.connect(
     host,
     options,
 );
 
 //Subscribe
-client.on('connect', function() {
-    client.subscribe('hamk/iot/valkeakoski/kontti/ui/#');
+mqttClient.on('connect', function() {
+    mqttClient.subscribe('hamk/iot/valkeakoski/kontti/ui/#');
 });
 
 export default class Loop extends Component {
@@ -49,31 +49,10 @@ export default class Loop extends Component {
           this.setState({ [topic]: message })
         }
 
-        client.on('message', function(topic, message) {
-            // message is Buffer
+        mqttClient.on('message', function(topic, message) {
             let mqttMessages = JSON.parse(message.toString());
-            let mqttTopic = topic.toString();
-            
-            switch (mqttTopic) {
-              // case 'hamk/iot/valkeakoski/kontti/ui/p1':
-              //   props.actions.mqttP1(returnMessage, returnTopic);
-              //   break;
-              // case 'hamk/iot/valkeakoski/kontti/ui/p2':
-              //   props.actions.mqttP2(returnMessage, returnTopic);
-              //   break;
-              // case 'hamk/iot/valkeakoski/kontti/ui/TE':
-              //   props.actions.mqttTe(returnMessage, returnTopic);
-              //   break;
-              // case 'hamk/iot/valkeakoski/kontti/ui/HV':
-              //   props.actions.mqttHv(returnMessage, returnTopic);
-              //   break;
-              // case 'hamk/iot/valkeakoski/kontti/ui/solar/heat':
-              //   props.actions.mqttSolar(returnMessage, returnTopic);
-              //   break;
-              default:
-                setMqttState(mqttMessages, mqttTopic)
-                break;
-            }
+            let mqttTopic = topic.toString().slice(31);
+            setMqttState(mqttMessages, mqttTopic)
         });
     }
 
