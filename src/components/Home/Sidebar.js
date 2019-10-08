@@ -12,6 +12,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import InputIcon from '@material-ui/icons/Input';
+import PowerIcon from '@material-ui/icons/Power';
+import InfoIcon from '@material-ui/icons/Info';
 
 
 const drawerWidth = 240;
@@ -122,24 +125,30 @@ const styles = theme => ({
 
 const DrawerContent = props => (
     <List component="nav">
-      <ListItem button>
-        <ListItemIcon>
-            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
-        </ListItemIcon>
-        <ListItemText primary="Dashboard" classes={{ primary: props.classes.whiteFont }} />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
-        </ListItemIcon>
-        <ListItemText primary="Inbox" classes={{ primary: props.classes.whiteFont }} />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-            <MenuIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
-        </ListItemIcon>
-        <ListItemText primary="Sign in" classes={{ primary: props.classes.whiteFont }} />
-      </ListItem>
+      <a href="https://www.w3schools.com/tags/tag_a.asp">
+        <ListItem button>
+            <ListItemIcon>
+                <PowerIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="Electricity Loop" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </a>
+      <a href="https://www.hamk.fi/projektit/vahahiilista-energiatehokkuutta-mikrochp-tekniikalla-venect/">
+        <ListItem button>
+            <ListItemIcon>
+                <InfoIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="About" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </a>
+      <a href="https://iot.research.hamk.fi/visu/login">
+        <ListItem button>
+            <ListItemIcon>
+                <InputIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="Sign in" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </a>
     </List>
   );
 
