@@ -14,7 +14,7 @@ const Container = (props) => {
   if (measurement.includes("AK_P") || measurement.includes("P1") || measurement.includes("P2")){
     return (
       <div style={{position:'absolute',top:`${position.top}%`,left:`${position.left}%`}}>
-        <div style={{textAlign:'center', color:"#C79F59"}}>{measurement} <Chip label={result}></Chip></div>
+        <div style={{textAlign:'center', color:"#C79F59"}}>{measurement}<div className="main-text-div">{result}</div></div>
       </div>
     );
   } else {
