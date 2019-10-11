@@ -31,18 +31,18 @@ export default function DataMapping(props) {
     case 'AK_P_FE':
       result = result / 3600;
       break;
-    case 'K_HV001':
-    case 'K_HV002':
-    case 'K_HV003':
-    case 'K_HV004':    
-    case 'K_HV005':
-    case 'K_HV006':
-    case 'K_HV007':
-    case 'K_HV008':
-    case 'K_HV009':
-    case 'K_HV010':    
-    case 'K_HV011':
-      result = result === 1 ? 'on' : 'off';
+    case 'HV-001':
+    case 'HV-002':
+    case 'HV-003':
+    case 'HV-004':    
+    case 'HV-005':
+    case 'HV-006':
+    case 'HV-007':
+    case 'HV-008':
+    case 'HV-009':
+    case 'HV-010':    
+    case 'HV-011':
+      result = result === 1 ? 'ON' : 'OFF';
       break;
     case 'P1_FE':
     case 'P2_FE':
@@ -63,10 +63,10 @@ export default function DataMapping(props) {
   var output;
   if (result || result === 0) {
     //console.log(result);
-    output = <span>{isNaN(result) ? result : round(result, 3) + ' ' + unit}</span>;
+    output = isNaN(result) ? result : round(result, 3) + ' ' + unit;
   } else {
     //console.log('null');
-    output = <span>loading</span>;
+    output = 'loading';
   }
   return output;
 }

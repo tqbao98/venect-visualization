@@ -74,16 +74,22 @@ export default class Loop extends Component {
       const AK = this.state.AK;
       
         return (
-          <div className="loop-container-loop">
-            <div className="loop-container">
-              <div className="loop-wrapper">
-              <PointContainer 
-                info={this.state.pointsSchema} 
-                messages={{...P1,...P2,...P3,...F1,...F2,...TE,...SC,...HV,...AK}}
-              />
-                <div className="div-block">
+          <div className="main-content">       
+            <h3 className="heading">Energy cycle</h3>
+            
+          
+            <div className="loop-container-loop">
+              <div className="loop-container">
+                <div className="loop-wrapper">
+                
+                  <div className="div-block">
                   
+                      <PointContainer 
+                      info={this.state.pointsSchema} 
+                      messages={{...P1,...P2,...P3,...F1,...F2,...TE,...SC,...HV,...AK}}
+                    />
                   <img src={diagram} alt="Diagram" className="diagram" />
+                  </div>
                 </div>
               </div>
             </div>

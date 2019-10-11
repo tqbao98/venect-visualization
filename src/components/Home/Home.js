@@ -1,16 +1,19 @@
 import React, { Component } from "react";
-import Sidebar from './Sidebar';
 import Loop from '../Loop/Loop'
+import Sidebar from './Sidebar';
+import {BrowserRouter, Route} from 'react-router-dom';
+import About from '../About/About'
 
 export default class Home extends Component {
   render() {
     return (
-      <Sidebar>
-        <div className="main-content">       
-          <h3 className="heading">Energy cycle</h3>
-          <Loop />
-        </div>
-      </Sidebar>
+      <BrowserRouter>
+        <Sidebar>
+
+            <Route exact path="/" component={Loop}/>
+            <Route path="/about" component={About}/>
+          </Sidebar>
+      </BrowserRouter>
     );
   }
 }

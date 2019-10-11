@@ -13,9 +13,9 @@ import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import InputIcon from '@material-ui/icons/Input';
-import PowerIcon from '@material-ui/icons/Power';
+import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-
+import {NavLink} from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -125,22 +125,25 @@ const styles = theme => ({
 
 const DrawerContent = props => (
     <List component="nav">
-      <a href="https://www.w3schools.com/tags/tag_a.asp">
+        
+      <NavLink to="/">
         <ListItem button>
             <ListItemIcon>
-                <PowerIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+                <HomeIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
             </ListItemIcon>
-            <ListItemText primary="Electricity Loop" classes={{ primary: props.classes.whiteFont }} />
+            <ListItemText primary="Energy Cycle" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
-      </a>
-      <a href="https://www.hamk.fi/projektit/vahahiilista-energiatehokkuutta-mikrochp-tekniikalla-venect/">
+      </NavLink>
+      
+      <NavLink to="/about">
         <ListItem button>
             <ListItemIcon>
                 <InfoIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
             </ListItemIcon>
             <ListItemText primary="About" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
-      </a>
+      </NavLink>
+
       <a href="https://iot.research.hamk.fi/visu/login">
         <ListItem button>
             <ListItemIcon>
