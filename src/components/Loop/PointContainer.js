@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Chip from '@material-ui/core/Chip';
 import pointsList from './PointsList';
 import DataMapping from './DataMapping';
 import Popup from 'reactjs-popup';
-import { getThemeProps } from '@material-ui/styles';
-import Iframe from 'react-iframe'
 
 const GrafanaPopup = props => (
   <Popup
@@ -17,7 +14,7 @@ const GrafanaPopup = props => (
     )}
 
     position={props.position}
-    
+
     contentStyle={{
       width: 'auto',
       backgroundColor: '#000000',

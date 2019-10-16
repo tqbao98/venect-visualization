@@ -131,7 +131,7 @@ const DrawerContent = props => (
             <ListItemIcon>
                 <HomeIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
             </ListItemIcon>
-            <ListItemText primary="Energy Cycle" classes={{ primary: props.classes.whiteFont }} />
+            <ListItemText primary="Home" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
       </NavLink>
       
