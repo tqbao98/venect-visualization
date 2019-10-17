@@ -1,0 +1,61 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  IMAGE_NAME: "venectui"
+  IMAGE_VERSION: "$CI_COMMIT_SHORT_SHA"
+  PORT_STAGING: "10004"
+  PORT_PRODUCTION: "10005"
+
+build_client:
+  stage: build
+  only:
+    - staging
+    - production
+  tags:
+    - konttiserver
+  script:
+    - docker build -t $IMAGE_NAME:$IMAGE_VERSION .
+
+# test_client:
+#   stage: test
+#   only:
+#     - staging
+#     - production
+#   tags:
+#     - ruukkiserver
+#     - wall-ui
+#   script:
+#     - npm run test
+
+deploy_staging:
+  stage: deploy
+  only:
+    - staging
+  tags:
+    - konttiserver
+  environment:
+    name: staging
+  before_script:
+    - docker stop $IMAGE_NAME-stag || true && docker rm $IMAGE_NAME-stag || true
+  script:
+    - docker run -dit -p 127.0.0.1:$PORT_STAGING:80 --name $IMAGE_NAME-stag --restart unless-stopped $IMAGE_NAME:$IMAGE_VERSION
+
+deploy_production:
+  stage: deploy
+  only:
+    - production
+  tags:
+    - konttiserver
+  when: manual
+  environment:
+    name: production
+  before_script:
+    - docker stop $IMAGE_NAME-stag || true && docker rm $IMAGE_NAME-stag || true
+    - docker stop $IMAGE_NAME-prod || true && docker rm $IMAGE_NAME-prod || true
+  script:
+    - docker run -dit -p 127.0.0.1:$PORT_PRODUCTION:80 --name $IMAGE_NAME-prod --restart unless-stopped $IMAGE_NAME:$IMAGE_VERSION
+  after_script:
+    - docker container prune -f && docker image prune -f
