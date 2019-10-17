@@ -126,7 +126,7 @@ const styles = theme => ({
 const DrawerContent = props => (
     <List component="nav">
         
-      <NavLink to="/">
+      <NavLink to="/venect/">
         <ListItem button>
             <ListItemIcon>
                 <HomeIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
@@ -135,7 +135,7 @@ const DrawerContent = props => (
         </ListItem>
       </NavLink>
       
-      <NavLink to="/about">
+      <NavLink to="/venect/about">
         <ListItem button>
             <ListItemIcon>
                 <InfoIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />

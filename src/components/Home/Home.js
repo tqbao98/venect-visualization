@@ -10,8 +10,8 @@ export default class Home extends Component {
     return (
       <BrowserRouter>
         <Sidebar>
-          <Route exact path="/" component={Loop}/>
-          <Route path="/about" component={About}/>
+          <Route exact path="/venect/" component={Loop}/>
+          <Route path="/venect/about" component={About}/>
         </Sidebar>
       </BrowserRouter>
     );
