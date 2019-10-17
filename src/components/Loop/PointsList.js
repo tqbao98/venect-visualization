@@ -3,8 +3,8 @@ const pointsList = [
       "measurement" : "TE-001",
       "panelId": 2,
       "position" : {
-        "top" : "66",
-        "left" : "25"
+        "top" : "67.5",
+        "left" : "28"
       },
     },
     {
@@ -19,8 +19,8 @@ const pointsList = [
       "measurement" : "TE-003",
       "panelId": 6,
       "position" : {
-        "top" : "66",
-        "left" : "8.5"
+        "top" : "67.5",
+        "left" : "9.3"
       },
     },
     {
@@ -28,39 +28,39 @@ const pointsList = [
       "panelId": 7,
       "position" : {
         "top" : "56.5",
-        "left" : "13"
+        "left" : "14.8"
       },
     },
     {
       "measurement" : "TE-005",
       "panelId": 8,
       "position" : {
-        "top" : "54",
-        "left" : "46"
+        "top" : "55",
+        "left" : "51.5"
       },
     },
     {
       "measurement" : "TE-006",
       "panelId": 9,
       "position" : {
-        "top" : "18",
-        "left" : "61"
+        "top" : "18.5",
+        "left" : "68.4"
       },
     },
     {
       "measurement" : "TE-007",
       "panelId": 10,
       "position" : {
-        "top" : "44.5",
-        "left" : "61"
+        "top" : "45",
+        "left" : "68.4"
       },
     },
     {
       "measurement" : "TE-008",
       "panelId": 11,
       "position" : {
-        "top" : "70",
-        "left" : "61"
+        "top" : "72",
+        "left" : "68.5"
       },
     },
     {
@@ -68,7 +68,7 @@ const pointsList = [
       "panelId": 12,
       "position" : {
         "top" : "24",
-        "left" : "70.4"
+        "left" : "78.7"
       },
     },
     {
@@ -76,7 +76,7 @@ const pointsList = [
       "panelId": 16,
       "position" : {
         "top" : "34",
-        "left" : "70.4"
+        "left" : "78.7"
       },
     },
     {
@@ -84,7 +84,7 @@ const pointsList = [
       "panelId": 15,
       "position" : {
         "top" : "49.5",
-        "left" : "70.4"
+        "left" : "78.7"
       },
     },
     {
@@ -92,7 +92,7 @@ const pointsList = [
       "panelId": 18,
       "position" : {
         "top" : "60",
-        "left" : "70.4"
+        "left" : "78.7"
       },
     },
     {
@@ -100,23 +100,23 @@ const pointsList = [
       "panelId": 17,
       "position" : {
         "top" : "75",
-        "left" : "70.4"
+        "left" : "78.7"
       },
     },
     {
       "measurement" : "TE-014",
       "panelId": 14,
       "position" : {
-        "top" : "85",
-        "left" : "70.4"
+        "top" : "86",
+        "left" : "78.7"
       },
     },
     {
       "measurement" : "TE-015",
       "panelId": 13,
       "position" : {
-        "top" : "12",
-        "left" : "67.9"
+        "top" : "3",
+        "left" : "74.5"
       },
     },
     {
@@ -124,7 +124,7 @@ const pointsList = [
       "panelId": 22,
       "position" : {
         "top" : "18",
-        "left" : "52.5"
+        "left" : "58.5"
       },
     },
     {
@@ -132,15 +132,15 @@ const pointsList = [
       "panelId": 21,
       "position" : {
         "top" : "68",
-        "left" : "39.4"
+        "left" : "44"
       },
     },
     {
       "measurement" : "TE-018",
       "panelId": 20,
       "position" : {
-        "top" : "66",
-        "left" : "33.8"
+        "top" : "67.5",
+        "left" : "37.7"
       },
     },
     {
@@ -148,7 +148,7 @@ const pointsList = [
       "panelId": 19,
       "position" : {
         "top" : "77",
-        "left" : "26.5"
+        "left" : "29.5"
       },
     },
     {
@@ -156,7 +156,7 @@ const pointsList = [
       "panelId": 25,
       "position" : {
         "top" : "28",
-        "left" : "65.3"
+        "left" : "73"
       },
     },
     {
@@ -164,7 +164,7 @@ const pointsList = [
       "panelId": 24,
       "position" : {
         "top" : "40",
-        "left" : "76.2"
+        "left" : "85.5"
       },
     },
     {
@@ -172,63 +172,63 @@ const pointsList = [
       "panelId": 32,
       "position" : {
         "top" : "28",
-        "left" : "76.2"
+        "left" : "85.5"
       },
     },
     {
       "measurement" : "HV-004",
       "panelId": 31,
       "position" : {
-        "top" : "54.5",
-        "left" : "65.3"
+        "top" : "55",
+        "left" : "73"
       },
     },
     {
       "measurement" : "HV-005",
       "panelId": 30,
       "position" : {
-        "top" : "66.3",
-        "left" : "76.2"
+        "top" : "67",
+        "left" : "85.5"
       },
     },
     {
       "measurement" : "HV-006",
       "panelId": 29,
       "position" : {
-        "top" : "54",
-        "left" : "76.2"
+        "top" : "54.5",
+        "left" : "85.5"
       },
     },
     {
       "measurement" : "HV-007",
       "panelId": 28,
       "position" : {
-        "top" : "80",
-        "left" : "65.3"
+        "top" : "81",
+        "left" : "73"
       },
     },
     {
       "measurement" : "HV-008",
       "panelId": 27,
       "position" : {
-        "top" : "92",
-        "left" : "76.2"
+        "top" : "92.5",
+        "left" : "85.5"
       },
     },
     {
       "measurement" : "HV-009",
       "panelId": 26,
       "position" : {
-        "top" : "80",
-        "left" : "76.2"
+        "top" : "80.5",
+        "left" : "85.5"
       },
     },
     {
       "measurement" : "HV-010",
       "panelId": 33,
       "position" : {
-        "top" : "1.5",
-        "left" : "53"
+        "top" : "2",
+        "left" : "59.3"
       },
     },
     {
@@ -236,7 +236,7 @@ const pointsList = [
       "panelId": 34,
       "position" : {
         "top" : "2",
-        "left" : "84"
+        "left" : "90.5"
       },
     },
     {
@@ -244,7 +244,7 @@ const pointsList = [
       "panelId": 39,
       "position" : {
         "top" : "43",
-        "left" : "35.5"
+        "left" : "39"
       },
     },
     {
@@ -252,7 +252,7 @@ const pointsList = [
       "panelId": 38,
       "position" : {
         "top" : "39.5",
-        "left" : "35.5"
+        "left" : "39"
       },
     },
     {
@@ -260,7 +260,7 @@ const pointsList = [
       "panelId": 36,
       "position" : {
         "top" : "36",
-        "left" : "35.5"
+        "left" : "39"
       },
     },
     {
@@ -268,7 +268,7 @@ const pointsList = [
       "panelId": 37,
       "position" : {
         "top" : "32.5",
-        "left" : "35.5"
+        "left" : "39"
       },
     },
     {
@@ -276,7 +276,7 @@ const pointsList = [
       "panelId": 40,
       "position" : {
         "top" : "29",
-        "left" : "35.5"
+        "left" : "39"
       },
     },
         {
@@ -284,7 +284,7 @@ const pointsList = [
       "panelId": 46,
       "position" : {
         "top" : "43",
-        "left" : "44"
+        "left" : "48.5"
       },
     },
     {
@@ -292,7 +292,7 @@ const pointsList = [
       "panelId": 48,
       "position" : {
         "top" : "39.5",
-        "left" : "44"
+        "left" : "48.5"
       },
     },
     {
@@ -300,7 +300,7 @@ const pointsList = [
       "panelId": 42,
       "position" : {
         "top" : "36",
-        "left" : "44"
+        "left" : "48.5"
       },
     },
     {
@@ -308,69 +308,78 @@ const pointsList = [
       "panelId": 50,
       "position" : {
         "top" : "32.5",
-        "left" : "44"
+        "left" : "48.5"
       },
     },
     {
       "measurement" : "P2_TE",
-      "panelId": 44,
+      "panelId": 48.5,
       "position" : {
         "top" : "29",
-        "left" : "44"
+        "left" : "48.5"
       },
     },
-    { "measurement" : "P3_RPM", 
-      "panelId": 47, 
-      "position" : { 
-        "top" : "3", 
-        "left" : "76" 
-      }, 
-    }, 
+
     { "measurement" : "P3_PE", 
       "panelId": 41, 
       "position" : { 
-        "top" : "1.5", 
-        "left" : "76.5" 
+        "top" : "3", 
+        "left" : "82" 
       }, 
     }, 
     { "measurement" : "P3_PWM", 
       "panelId": 49, 
       "position" : { 
-        "top" : "3", 
-        "left" : "79.5" 
+        "top" : "10", 
+        "left" : "82" 
       }, 
     },
     {
       "measurement" : "P3_FE",
       "panelId": 45,
       "position" : {
-        "top" : "2",
-        "left" : "76"
+        "top" : "10",
+        "left" : "85.5"
       },
     },
-
     {
       "measurement" : "P3_TE",
       "panelId": 43,
       "position" : {
-        "top" : "2",
-        "left" : "79"
+        "top" : "3",
+        "left" : "85.5"
       },
     },
     {
-      "measurement" : "F1_PWM",
-      "panelId": 52,
+      "measurement" : "F2_FE",
+      "panelId": 60,
       "position" : {
-        "top" : "82.5",
-        "left" : "48.5"
+        "top" : "71.5",
+        "left" : "57.5"
       },
     },
     {
       "measurement" : "F2_PWM",
       "panelId": 53,
       "position" : {
-        "top" : "71",
-        "left" : "48.5"
+        "top" : "71.5",
+        "left" : "54"
+      },
+    },
+    {
+      "measurement" : "F1_PWM",
+      "panelId": 52,
+      "position" : {
+        "top" : "83.5",
+        "left" : "54"
+      },
+    },
+    {
+      "measurement" : "F1_FE",
+      "panelId": 59,
+      "position" : {
+        "top" : "83.5",
+        "left" : "57.5"
       },
     },
     {
@@ -378,7 +387,7 @@ const pointsList = [
       "panelId": 57,
       "position" : {
         "top" : "27",
-        "left" : "20"
+        "left" : "22"
       },
     },
     {
@@ -386,7 +395,7 @@ const pointsList = [
       "panelId": 54,
       "position" : {
         "top" : "34",
-        "left" : "20"
+        "left" : "22"
       },
     },
     {
@@ -394,7 +403,7 @@ const pointsList = [
       "panelId": 56,
       "position" : {
         "top" : "30.5",
-        "left" : "20"
+        "left" : "22"
       },
     },
     {
@@ -402,15 +411,15 @@ const pointsList = [
       "panelId": 55,
       "position" : {
         "top" : "7",
-        "left" : "12"
+        "left" : "14"
       },
     },
     {
       "measurement" : "SC_PWM",
       "panelId": 51,
       "position" : {
-        "top" : "84",
-        "left" : "23.5"
+        "top" : "85",
+        "left" : "26"
       },
     }
 ];

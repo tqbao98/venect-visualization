@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import diagram from '../../images/EnergyDiagram2.svg';
+import diagram from '../../images/EnergyDiagram3.svg';
 import axios from 'axios';
 import PointContainer from './PointContainer'
 import Tabs from './Tabs'

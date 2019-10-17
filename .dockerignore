@@ -1,0 +1,14 @@
+node_modules
+
+Dockerfile
+.dockerignore
+
+.gitignore
+README.md
+
+coverage
+
+.gitlab-ci.yml
+
+.firebaserc
+firebase.json
