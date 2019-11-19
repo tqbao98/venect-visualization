@@ -20,6 +20,7 @@ export default class About extends Component{
 
         <div class="about_section">
           <div class="about_container cc-main-about">
+            
             <div id="w-node-d1068e0b7662-067fc124" class="about_row cc-vision">
               <h2 class="eyebrow large">Vision</h2>
               <p class="about_vision">We expand and refine a hybrid energy module integrated with CHP, 

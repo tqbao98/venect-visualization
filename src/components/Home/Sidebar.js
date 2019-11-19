@@ -144,14 +144,14 @@ const DrawerContent = props => (
         </ListItem>
       </NavLink>
 
-      <a href="https://iot.research.hamk.fi/visu/login">
+      <NavLink to="/login">
         <ListItem button>
             <ListItemIcon>
                 <InputIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
             </ListItemIcon>
             <ListItemText primary="Sign in" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
-      </a>
+      </NavLink>
     </List>
   );
 
