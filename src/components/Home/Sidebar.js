@@ -128,7 +128,7 @@ const styles = theme => ({
 const DrawerContent = props => (
     <List component="nav">
         
-      <NavLink to="/">
+      <NavLink to="/venect">
         <ListItem button>
             <ListItemIcon>
                 <HomeIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
@@ -137,16 +137,16 @@ const DrawerContent = props => (
         </ListItem>
       </NavLink>
 
-      <NavLink to="/electricity">
+      {/* <NavLink to="/venect/electricity">
         <ListItem button>
             <ListItemIcon>
                 <PowerIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
             </ListItemIcon>
             <ListItemText primary="Electricity" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
-      </NavLink>
+      </NavLink> */}
       
-      <NavLink to="/about">
+      <NavLink to="/venect/about">
         <ListItem button>
             <ListItemIcon>
                 <InfoIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
@@ -164,7 +164,7 @@ const DrawerContent = props => (
         </ListItem>
       </a>
 
-      <NavLink to="/login">
+      <NavLink to="/venect/login">
         <ListItem button>
             <ListItemIcon>
                 <InputIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />

@@ -11,10 +11,10 @@ export default class Home extends Component {
     return (
       <BrowserRouter>
         <Sidebar>
-          <Route exact path="/" component={Loop}/>
-          <Route path="/about" component={About}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/electricity" component={Electricity}/>
+          <Route exact path="/venect" component={Loop}/>
+          <Route path="/venect/about" component={About}/>
+          <Route path="/venect/login" component={Login}/>
+          <Route path="/venect/electricity" component={Electricity}/>
           
         </Sidebar>
       </BrowserRouter>
