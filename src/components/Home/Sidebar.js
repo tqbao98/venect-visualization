@@ -15,7 +15,9 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import InputIcon from '@material-ui/icons/Input';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import PowerIcon from '@material-ui/icons/Power';
 import {NavLink} from 'react-router-dom';
+import BarChartIcon from '@material-ui/icons/BarChart';
 
 const drawerWidth = 240;
 
@@ -134,6 +136,15 @@ const DrawerContent = props => (
             <ListItemText primary="Home" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
       </NavLink>
+
+      <NavLink to="/electricity">
+        <ListItem button>
+            <ListItemIcon>
+                <PowerIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="Electricity" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </NavLink>
       
       <NavLink to="/about">
         <ListItem button>
@@ -144,6 +155,15 @@ const DrawerContent = props => (
         </ListItem>
       </NavLink>
 
+      <a href="https://iot.research.hamk.fi/visu/login">
+        <ListItem button>
+            <ListItemIcon>
+                <BarChartIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="Grafana" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </a>
+
       <NavLink to="/login">
         <ListItem button>
             <ListItemIcon>
@@ -152,6 +172,7 @@ const DrawerContent = props => (
             <ListItemText primary="Sign in" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
       </NavLink>
+
     </List>
   );
 
