@@ -18,6 +18,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import PowerIcon from '@material-ui/icons/Power';
 import {NavLink} from 'react-router-dom';
 import BarChartIcon from '@material-ui/icons/BarChart';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 
 const drawerWidth = 240;
 
@@ -144,7 +145,16 @@ const DrawerContent = props => (
             </ListItemIcon>
             <ListItemText primary="Electricity" classes={{ primary: props.classes.whiteFont }} />
         </ListItem>
-      </NavLink> */}
+      </NavLink>  */}
+
+      <NavLink to="/venect/result">
+        <ListItem button>
+            <ListItemIcon>
+                <AssignmentTurnedInIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
+            </ListItemIcon>
+            <ListItemText primary="Result" classes={{ primary: props.classes.whiteFont }} />
+        </ListItem>
+      </NavLink> 
       
       <NavLink to="/venect/about">
         <ListItem button>

@@ -51,7 +51,7 @@ const Container = (props) => {
   // choose whether chips are under or beside measurements ID
   return (
     <div style={containerStyle}>
-      <div style={{textAlign:'center', color:"#C79F59"}}>{measurement} </div>
+      <div style={{textAlign:'center', color:"#C79F59"}}>{measurement}</div>
       <GrafanaPopup {...props} result={result} />
     </div>
   )

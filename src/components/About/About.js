@@ -43,7 +43,7 @@ export default class About extends Component{
             <Bio/>
 
             <div class="footer__bottom">
-              <p class="footer__copyright-text light">© 2019 HAMK. All rights reserved.</p>
+              <p class="footer__copyright-text light">© 2020 HAMK. All rights reserved.</p>
             </div>
 
           </div>

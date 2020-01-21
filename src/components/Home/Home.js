@@ -5,6 +5,7 @@ import Loop from '../Loop/Loop'
 import About from '../About/About'
 import Login from '../Login/Login'
 import Electricity from '../Electricity/Electricity'
+import Result from '../Result/Result'
 
 export default class Home extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class Home extends Component {
           <Route path="/venect/about" component={About}/>
           <Route path="/venect/login" component={Login}/>
           <Route path="/venect/electricity" component={Electricity}/>
+          <Route path="/venect/result" component={Result}/>
           
         </Sidebar>
       </BrowserRouter>
