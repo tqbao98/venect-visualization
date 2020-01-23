@@ -313,7 +313,7 @@ const pointsList = [
     },
     {
       "measurement" : "P2_TE",
-      "panelId": 48.5,
+      "panelId": 44,
       "position" : {
         "top" : "29",
         "left" : "48.5"

@@ -22,8 +22,8 @@ export default function CenteredGrid() {
         <Grid container spacing={3}>
             <Grid item xs={6} sm={6} md={3} lg={3} xl={3}>
                 <Paper style={{backgroundColor:"#273a3a"}} className={classes.paper}>
-                    <div style={{color: "#d6d4af", fontWeight:"bolder", fontSize:"200%", fontFamily:"Roboto"}}>Fuel volume</div>
-                    <div style={{color: "#Fdbf50", fontWeight:"bolder", fontSize:"400%", fontFamily: "Georgia", padding:"5% 0%"}}>17l</div>
+                    <div style={{color: "#d6d4af", fontWeight:"bolder", fontSize:"2em", fontFamily:"Roboto"}}>Fuel volume</div>
+                    <div style={{color: "#Fdbf50", fontWeight:"bolder", fontSize:"4em", fontFamily: "Georgia", padding:"5% 0%"}}>17l</div>
                 </Paper>
             </Grid>
             <Grid item xs={6} sm={6} md={3} lg={3} xl={3}>

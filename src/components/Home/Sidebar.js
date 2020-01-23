@@ -165,7 +165,7 @@ const DrawerContent = props => (
         </ListItem>
       </NavLink>
 
-      <a href="https://iot.research.hamk.fi/visu/login">
+      <a href="https://iot.research.hamk.fi/visu/login" target="_blank" rel="noopener noreferrer">
         <ListItem button>
             <ListItemIcon>
                 <BarChartIcon className={classNames(props.classes.icon,props.classes.listItemIcon)} />
