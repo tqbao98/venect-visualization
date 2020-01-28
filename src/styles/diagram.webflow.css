@@ -957,6 +957,24 @@ img {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  body { 
+     font-size: 0.5em; 
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body { 
+      font-size: 0.4em; 
+  }  
+}
+
+@media only screen and (max-width: 320px) {
+  body { 
+      font-size: 0.35em; 
+  }  
+}
+
 @media (max-width: 767px) {
   .loop-container {
     width: 120vw;
