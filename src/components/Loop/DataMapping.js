@@ -41,7 +41,7 @@ export default function DataMapping(props) {
     case 'HV-011':
     case 'FI1_B':
     case 'FI1_H':
-      result = result === true ? 'ON' : 'OFF';
+      result = result === 1 ? 'ON' : 'OFF';
       break;
     case 'P1_FE':
     case 'P2_FE':

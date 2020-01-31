@@ -42,6 +42,7 @@ const GrafanaPopup = props => (
 )
 
 const Container = (props) => {
+  console.log(props);
   const {position,measurement} = props.pointsList;
   let containerStyle = measurement.includes("AK_P") || measurement.includes("P1") || measurement.includes("P2") ?
                         {position:'absolute',top:`${position.top}%`,left:`${position.left}%`,display:'flex',flexDirection:'row', justifyContent:'space-evenly'} :
