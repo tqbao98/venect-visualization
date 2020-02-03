@@ -72,6 +72,7 @@ export default class Loop extends Component {
       const P3 = this.state.P3;
       const HV = this.state.HV;
       const AK = this.state.AK;
+      const O2 = this.state.O2;
       
         return (
           <div className="main-content">       
@@ -82,7 +83,7 @@ export default class Loop extends Component {
                   <div className="div-block">
                     <PointContainer 
                     info={this.state.pointsSchema} 
-                    messages={{...P1,...P2,...P3,...F1,...F2,...TE,...SC,...HV,...AK}}
+                    messages={{...P1,...P2,...P3,...F1,...F2,...TE,...SC,...HV,...AK,...O2}}
                     />
                     <img src={diagram} alt="Diagram" className="diagram" />
                     

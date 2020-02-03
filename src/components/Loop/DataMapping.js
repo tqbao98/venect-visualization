@@ -10,17 +10,19 @@ export default function DataMapping(props) {
 
   unit = title.includes('TE')
     ? '°C'
-    : title.includes('FE')
-      ? 'l/s'
-      : title.includes('PE')
-        ? 'bar'
-        : title.includes('PWM')
-          ? '%'
-          : title.includes('RPM')
-            ? 'rpm'
-            : title.includes('QQ')
-              ? 'kWh'
-              : '';
+    : title.includes('F1_FE') || title.includes('AK_P_FE') || title.includes('F2_FE')
+        ? 'l/s'
+      : title.includes('FE')
+        ? 'l/m'
+          : title.includes('PE')
+            ? 'bar'
+            : title.includes('PWM') || title.includes('O2')
+              ? '%'
+              : title.includes('RPM')
+                ? 'rpm'
+                : title.includes('QQ')
+                  ? 'kWh'
+                  : '';
 
   result = props.message ? props.message[props.id] : result;
 
@@ -46,7 +48,7 @@ export default function DataMapping(props) {
     case 'P1_FE':
     case 'P2_FE':
     case 'P3_FE':
-      result = (result * 1000) / 3600;
+      result = (result * 1000) / 60;
       break;
     case 'P1_TE':
     case 'P2_TE':

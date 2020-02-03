@@ -29,7 +29,7 @@ const GrafanaPopup = props => (
     <div className="content-div">
         <iframe
       src={
-        'https://iot.research.hamk.fi/visu/d-solo/Kogkmv2Wz/venect-measurements?orgId=4&from=now-7d&to=now&panelId=' + 
+        'https://iot.research.hamk.fi/visu/d-solo/Kogkmv2Wz/venect-measurements?orgId=4&from=now-6h&to=now&panelId=' + 
         props.pointsList.panelId
       }
       title={props.pointsList.measurement}
