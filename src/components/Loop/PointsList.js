@@ -424,7 +424,7 @@ const pointsList = [
     },
     {
       "measurement" : "O2",
-      "panelId": 51,
+      "panelId": 62,
       "position" : {
         "top" : "77",
         "left" : "26"
